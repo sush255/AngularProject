@@ -1,0 +1,23 @@
+.layout {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .content-wrapper {
+    display: flex;
+    flex: 1;
+  }
+  
+  app-side-nav {
+    width: 250px;
+    background-color: #343a40;
+    color: white;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 16px;
+    overflow-y: auto;
+  }
+  

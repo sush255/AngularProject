@@ -1,0 +1,21 @@
+<div class="header">
+    <div class="logo">Logo</div>
+    <div class="user">
+        <div class="user-name">{{name}}</div>
+        <div class="user-image ml-auto dropdown" >
+            <button 
+            class="btn btn-primary dropdown-toggle" 
+            type="button" 
+            id="userMenuButton" 
+            data-bs-toggle="dropdown" 
+            aria-expanded="false">
+            <i class="bi bi-person-circle"></i> <!-- Bootstrap user icon -->
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userMenuButton">
+            <li><button class="dropdown-item" (click)="editProfile()">Edit Profile</button></li>
+            <li><button class="dropdown-item" (click)="changePassword()">Change Password</button></li>
+            <li><button class="dropdown-item" (click)="logout()">Logout</button></li>
+          </ul>
+        </div>
+    </div>
+</div>

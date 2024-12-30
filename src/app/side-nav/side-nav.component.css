@@ -1,0 +1,75 @@
+.main-container{
+    display: flex;
+    .side-nav{
+        width: 280px;
+        min-width: 230px;
+        min-height: calc(100vh - 70px);
+        background-color: rgb(16, 16, 117);
+        color: aliceblue;
+        box-shadow: 5px 5px 5px black;
+        @media only screen and (max-width :1300px){
+            width: 100px;
+            min-width: 100px;
+        }
+    }
+    .main{
+        padding: 30px;
+    }
+    }
+.nav-items {
+    padding-top: 40px;
+
+    .nav-item {
+        padding: 10px 15px;
+        cursor: pointer;
+
+        /* display: flex; */
+        @media only screen and (max-width:1300px) {
+            padding: 10px 15px;
+        }
+
+        /* &:hover {
+            background-color: blueviolet;
+        } */
+
+        fa-icon {
+            margin-right: 20px;
+            font-size: 22px;
+        }
+
+        span {
+            display: inline;
+
+            @media only screen and (max-width:1300px) {
+                display: none;
+            }
+        }
+    }
+
+    .nav-item a {
+        text-decoration: none;
+        /* Remove underline */
+        color: inherit;
+        /* Use the parent color or default */
+        display: flex;
+        /* Optional: To align icon and text */
+        align-items: center;
+        padding: 8px 12px;
+        border-radius: 4px;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    .nav-item a:hover,
+    .nav-item a.active {
+        color: #ffffff;
+        /* Font color on hover/active */
+        background-color: #007bff;
+        /* Background color on hover/active */
+    }
+
+    .nav-item fa-icon {
+        margin-right: 8px;
+        /* Space between icon and text */
+    }
+}
+
